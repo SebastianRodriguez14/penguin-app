@@ -7,15 +7,23 @@
     android:background="@color/white"
     android:scrollbars="none"
     tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/back_login"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/icon_back"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="25dp"
+        />
+
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginTop="60dp">
-
-
+        android:gravity="center_vertical">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="200dp"
@@ -41,7 +49,7 @@
             />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/input_user"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/input_user"
@@ -50,6 +58,7 @@
                 app:startIconDrawable="@drawable/start_icon_user">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_user"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLength="20"
@@ -58,7 +67,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/input_email"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/input_email"
@@ -67,16 +76,17 @@
                 app:startIconDrawable="@drawable/start_icon_email">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
-                    android:maxLength="20"
+                    android:maxLength="255"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/input_password"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/input_password"
@@ -87,16 +97,17 @@
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
-                    android:maxLength="255"
+                    android:maxLength="20"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/login_button"
+                android:id="@+id/register_button"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:fontFamily="@font/roboto_medium"

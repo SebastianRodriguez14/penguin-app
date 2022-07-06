@@ -8,12 +8,12 @@
     android:scrollbars="none"
     tools:context=".LoginActivity">
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginTop="70dp">
+        android:gravity="center_vertical">
 
 
         <ImageView
@@ -42,7 +42,6 @@
                 />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/input_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/input_user"
@@ -51,6 +50,7 @@
                 app:startIconDrawable="@drawable/start_icon_user">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_user"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLength="20"
@@ -59,7 +59,6 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/input_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/input_password"
@@ -70,6 +69,7 @@
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
